@@ -1,14 +1,5 @@
 pipeline {
-    agent any
-     tools {
-        maven 'MAVEN_HOME'
-      }
-        environment { 
-        registry = "mortadha123/testdocker" 
-        registryCredential = 'Docker' 
-        dockerImage = '' 
-    }
-     
+    agent any     
 
     stages {
         
