@@ -67,7 +67,7 @@ pipeline {
             }
         }
         
-        stage('Build docker image') {
+        stage('Build docker imag') {
          steps {
             script {
              echo "Build number is ${currentBuild.number}"
