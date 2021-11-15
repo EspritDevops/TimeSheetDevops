@@ -71,7 +71,7 @@ pipeline {
          steps {
             script {
              echo "Build number is ${currentBuild.number}"
-           bat   'docker build -t timesheet-image${currentBuild.number} .  '
+           bat   'docker build -t timesheetimage:${currentBuild.number} .  '
            
           }
          }
@@ -80,7 +80,7 @@ pipeline {
          steps {
             script {
           bat 'docker login -u tiss456852456852 -p tissAa###'
-          bat 'docker push  tiss456852456852/test-image'
+          bat 'docker push  tiss456852456852/timesheetimage'
    }}}
         
      
