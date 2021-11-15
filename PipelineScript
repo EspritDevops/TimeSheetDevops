@@ -70,9 +70,8 @@ pipeline {
         stage('Build docker image') {
          steps {
             script {
-             build_id='wget -qO- jenkins_url/job/job_name/lastSuccessfulBuild/buildNumber'
-             echo $build_id
-           bat   'docker build -t timesheet-image+$build_id . '
+             r
+           bat   'docker build -t timesheet-image:$$BUILD_NUMBER . '
            
           }
          }
