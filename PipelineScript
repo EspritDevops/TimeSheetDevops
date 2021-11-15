@@ -71,7 +71,7 @@ pipeline {
          steps {
             script {
              echo "Build number is ${currentBuild.number}"
-           bat   'docker build -t timesheet-image  '
+           bat   'docker build -t timesheet-image${currentBuild.number} .  '
            
           }
          }
