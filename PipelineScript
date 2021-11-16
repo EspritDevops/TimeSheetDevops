@@ -82,7 +82,7 @@ pipeline {
          steps {
             script {
           bat 'docker login -u tiss456852456852 -p tissAa###'
-          bat 'docker push timesheetimage_%BUILD_NUMBER%'
+          bat 'docker push tiss456852456852/timesheetimage_%BUILD_NUMBER%'
    }}}
         
      
