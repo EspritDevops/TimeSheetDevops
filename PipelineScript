@@ -1,9 +1,9 @@
 pipeline {
     agent any
+   tools {
+        maven 'MAVEN_HOME'
+      
    
-     
-    
-
     stages {
     
         stage('put jar in target foldeer') {
